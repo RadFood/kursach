@@ -22,7 +22,10 @@ struct Station
 void Create(FILE* file);
 void ViewDoc(FILE* file);
 void Delete(FILE* file);
+void PrintAfterTime(FILE* file, char* time);
 void Info(Station* s);
+bool checknum(const string& str);   
+bool checktime(const string& time);
 
 bool checknum(const string& str) {
 	for (char c : str) {
@@ -371,3 +374,5 @@ int main()
 	Menu();
 	cout << "";
 }
+
+
